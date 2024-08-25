@@ -338,7 +338,7 @@ const intervalId = setInterval(flipmotto, 100);
 
 // Expanding About Text
 function toggleText() {
-  var moreText = document.getElementById("more");
+  var moreText = document.getElementById("publications");
   var btnText = document.getElementById("toggle-button");
 
   if (moreText.style.display === "none") {
