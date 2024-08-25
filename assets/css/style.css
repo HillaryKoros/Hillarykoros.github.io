@@ -38,13 +38,14 @@
     hsl(35, 100%, 68%)
   );
 
+
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsla(240, 1%, 21%, 0.686);
   --eerie-black-1: hsla(0, 0%, 7%, 0.836);
   --eerie-black-2: hsla(120, 88%, 6%, 0.418);
-  --sha-background: linear-gradient(to bottom, #678d36 0%, #678d36 70%);
+  --sha-background: linear-gradient(to bottom, #8d7936 0%, #976a08 70%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -69,35 +70,28 @@
   --fs-6: 14px;
   --fs-7: 13px;
   --fs-8: 11px;
-
   /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
-
   /**
    * shadow
    */
-
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
   /**
    * transition
    */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 }
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -105,15 +99,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
-
 li {
   list-style: none;
 }
-
 img,
 ion-icon,
 a,
@@ -122,7 +113,6 @@ time,
 span {
   display: block;
 }
-
 button {
   font: inherit;
   background: none;
@@ -130,7 +120,6 @@ button {
   text-align: left;
   cursor: pointer;
 }
-
 input,
 textarea {
   display: block;
@@ -138,16 +127,13 @@ textarea {
   background: none;
   font: inherit;
 }
-
 ::selection {
   background: var(--orange-yellow-crayola);
   color: var(--eerie-black-1);
 }
-
 :focus {
   outline-color: var(--orange-yellow-crayola);
 }
-
 html {
   font-family: var(--ff-poppins);
 }
