@@ -13,7 +13,7 @@
   --bg-gradient-jet: linear-gradient(
       to bottom right,
       hsla(0, 0%, 100%, 0.205) 0%,
-      hsla(240, 91%, 31%, 0.171) 100%
+      hsla(240, 4%, 39%, 0.171) 100%
     ),
     hsla(240, 74%, 39%, 0.123);
   --bg-gradient-yellow-1: linear-gradient(
@@ -29,13 +29,13 @@
     hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right,
-    hsla(180, 45%, 16%, 0.452) 0%,
-    hsla(241, 63%, 14%, 0) 50%
+    hsla(180, 1%, 43%, 0.452) 0%,
+    hsla(180, 2%, 8%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right,
-    hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
+    hsl(61, 91%, 47%),
+    hsl(35, 94%, 48%)
   );
 
 
@@ -44,8 +44,8 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsla(240, 1%, 21%, 0.686);
   --eerie-black-1: hsla(0, 0%, 7%, 0.836);
-  --eerie-black-2: hsla(120, 88%, 6%, 0.418);
-  --sha-background: linear-gradient(to bottom, #597e04 0%, #597e04 70%);
+  --eerie-black-2: hsla(120, 4%, 5%, 0.418);
+  --sha-background: linear-gradient(to bottom, #c0bebe 0%, #c0bebe 70%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -137,6 +137,7 @@ textarea {
 html {
   font-family: var(--ff-poppins);
 }
+
 
 body {
   background: var(--sha-background);
