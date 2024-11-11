@@ -21,6 +21,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+      const mode = body.classList.contains("dark-mode") ? "dark" : "light";
+      localStorage.setItem("theme", mode);
+    }
+
+    // Set theme based on localStorage or default to light mode
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.body.classList.add(savedTheme === "dark" ? "dark-mode" : "light-mode");
+      }
+    });
+  </script>
 </head>
 <!--End of Heading -->
 
@@ -29,9 +45,13 @@
   <!--
     - #MAIN
   -->
+  <div class="mode-toggle">
+    <button onclick="toggleMode()">🌙 / 🌞</button>
+  </div>
   <main>
     <!--
       - #SIDEBAR
+      
     -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
@@ -95,6 +115,7 @@
             </a>
           </li>
         </ul>
+        
       </div>
     </aside>
     <!--
@@ -133,11 +154,12 @@
         <section class="about-text content-card">
           <div id="expandable-section">
             <p>
-              Hey there! 👋 I'm Hillary Koros🌍. </br>
-           I specialize in tackling global spatial challenges using GIS 🗺️, Remote Sensing 🛰️, and programming 🛠️. </br>
-          With expertise in GIS, Earth Observation, AI, and Predictive Modeling 📈, I'm passionate about leveraging geospatial big data and machine learning to craft solutions that supports decision-makers through insightful spatial analysis 📊 </br>
-          Additionally, I'm adept at creating visually captivating and location-enabled websites, apps, and solutions 🌟.
-              </p>
+              Hey there! 👋 I'm Hillary Koros 🌍. <br>
+              I specialize in tackling global spatial challenges using GIS 🗺️, Remote Sensing 🛰️, and programming 🛠️. <br>
+              With expertise in GIS, Earth Observation, AI, and Predictive Modeling 📈, I'm passionate about leveraging geospatial big data, machine learning, and spatial databases (PostgreSQL/PostGIS, MongoDB) to craft solutions that support decision-makers through insightful spatial analysis 📊. <br>
+              Additionally, I'm adept at creating visually captivating and location-enabled websites, apps, and solutions 🌟.
+          </p>
+          
             </div>
         </section> 
         <!--
@@ -537,7 +559,7 @@
                 </a>
               </div>
             </li>
-            <!-- <li class="project-item active" data-filter-item data-category="websites designs">
+            <li class="project-item active" data-filter-item data-category="websites designs">
               <a href="https://hillarykoros.github.io/">
                 <figure class="project-img loading">
                   <img src="./assets/images/projects/e-commerce.JPG" loading="lazy">
@@ -554,7 +576,7 @@
                   <ion-icon name="logo-github"></ion-icon> GitHub
                 </a>
               </div>
-            </li> -->
+            </li>
             <li class="project-item active" data-filter-item data-category="websites designs">
               <a href="https://hillarykoros.github.io/">
                 <figure class="project-img loading">
@@ -674,6 +696,8 @@
       </article>
 
     </div>
+
+    
 
   </main>
 
